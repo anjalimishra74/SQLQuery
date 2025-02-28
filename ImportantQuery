@@ -1,0 +1,91 @@
+Perform inner JOIN to retrieve common records.
+ 
+SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+
+Perform left JOIN to retrieve records from the left table.
+ 
+SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
+
+Perform right JOIN to retrieve records from the right table.
+ 
+SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
+
+Calculate the sum of values in a column.
+ 
+SELECT SUM(column_name) FROM table_name;
+
+Find the average value of a column.
+ 
+SELECT AVG(column_name) FROM table_name;
+
+Retrieve the maximum value from a column.
+ 
+SELECT MAX(column_name) FROM table_name;
+
+Retrieve the minimum value from a column.
+ 
+SELECT MIN(column_name) FROM table_name;
+
+Group records based on a specific column.
+ 
+SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;
+
+Filter records using the HAVING clause.
+ 
+SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name HAVING COUNT(*) > 1;
+
+Use the LIKE operator to search for patterns in text.
+ 
+SELECT * FROM table_name WHERE column_name LIKE 'pattern%';
+
+Use the BETWEEN operator to filter records within a range.
+ 
+SELECT * FROM table_name WHERE column_name BETWEEN value1 AND value2;
+
+Use the IN operator to filter records from a list of values.
+ 
+SELECT * FROM table_name WHERE column_name IN (value1, value2, value3);
+
+Use the EXISTS operator for subquery comparisons.
+ 
+SELECT column_name FROM table_name WHERE EXISTS (SELECT * FROM another_table WHERE another_table.column = table_name.column);
+
+Count the number of records in a group using GROUP BY.
+ 
+SELECT column_name, COUNT(*) FROM table_name GROUP BY column_name;
+
+Retrieve records that match a pattern using regular expressions.
+ 
+SELECT * FROM table_name WHERE column_name ~ 'pattern';
+
+Use the UNION operator to combine results from multiple SELECT statements.
+ 
+SELECT column_name FROM table1 UNION SELECT column_name FROM table2;
+
+Update records in a table.
+ 
+UPDATE table_name SET column_name = new_value WHERE condition;
+
+Delete records from a table.
+ 
+DELETE FROM table_name WHERE condition;
+
+Insert new records into a table.
+ 
+INSERT INTO table_name (column1, column2, column3) VALUES (value1, value2, value3);
+
+Create a new table.
+ 
+CREATE TABLE new_table (column1 datatype, column2 datatype, column3 datatype);
+
+Modify table structure using ALTER TABLE.
+ 
+ALTER TABLE table_name ADD column_name datatype;
+
+Retrieve records from multiple tables using subqueries.
+ 
+SELECT column_name FROM table1 WHERE column_name IN (SELECT column_name FROM table2);
+
+Use aggregate functions (SUM, AVG, COUNT, MAX, MIN) for data analysis.
+ 
+SELECT SUM(column_name), AVG(column_name), COUNT(column_name), MAX(column_name), MIN(column_name) FROM table_name;
